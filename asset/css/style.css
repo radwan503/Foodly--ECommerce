@@ -1,0 +1,816 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+body {
+    font-family: serif;
+        outline: 0;
+}
+
+/*===global====*/
+
+.button {
+    background-color: #f7f7f7;
+    padding: 7px 25px 7px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #222;
+    border: none;
+    width: 100%;
+}
+.header-title{
+    font-size: 24px;
+    font-family: serif;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/*===top nav====*/
+
+.top-nav {
+    background-color: #fff;
+    padding: 7px;
+}
+
+.left-menu ul {
+    margin: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.left-menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.left-menu li a {
+    color: #222;
+    font-weight: 600;
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+    transition: .5s;
+}
+.left-menu li a:hover{
+     color: #EB6825;
+}
+.left-menu li a i {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu li a {
+    color: #222;
+    font-weight: 600;
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+    transition: .5s;
+}
+.menu li a:hover{
+    color: #EB6825;
+}
+.menu li a i {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 15px;
+}
+/*registration modal css*/
+.modal-header h5{
+    text-align: center;
+}
+h3.login-title {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.header-login-form {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.header-login-form h3{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    
+}
+.login-with-soacial {
+    background-color: #4267B2;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+.login-with-soacial a{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    text-decoration: none;
+}
+.input-field-all{
+    width: 100%;
+    font-size: 14px;
+    height: 42px;
+    padding-left: 10px;
+    margin: 0 0 20px;
+  
+}
+.login-submit{
+     background-color: #EB6825;
+    text-transform: uppercase;
+    font-family: serif;
+    color: #fff;
+}
+/*===== navbar bottom bg or top bg ====== */
+
+
+.top-bg {
+    background-color: #eee;
+    height: auto;
+    
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #F07F31;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .active > .nav-link{
+    color: #F07F31;
+}
+.btn-search{
+    
+    width: 100px;
+    margin: 0 auto;
+    margin-left: 75px;
+    text-align: center;
+    margin-top: 12px;
+}
+.slider-title h2{
+    font-size: 50px;
+    text-align: center;
+    background-color: #222;
+    padding: 30px;
+    
+    
+}
+
+.info-group {
+    background-color: #222;
+    padding: 30px;
+    opacity: .7;
+}
+.input-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: none 0s ease 0s;
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+.selectpicker {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: none 0s ease 0s;
+    width: 100%;
+}
+
+.list3-24-18 {
+    margin-top: 15px;
+}
+.main-text {
+    position: absolute;
+    padding: 100px;
+    width: 100%;
+    color: #FFF;
+    font-size: 14px;
+   
+}
+.slider-title {
+    opacity: .8;
+}
+/*=======sidenav for add to cart=====*/
+.add-to-cart-add.pull-right {
+    background-color: #EB6825;
+    margin-right: 0px;
+    margin-top: 20%;
+    width: 7%;
+    padding: 10px 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 999;
+    
+}
+.sidenav {
+    height: 50%;
+    color: #fff;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: 0.5s;
+    transform: translateY(50%);
+    z-index: 99999;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+   position: absolute;
+    top: -14px;
+    right: 3px;
+    color: green;
+    left: 0;
+    font-size: 25px;
+    margin-left: -30px;
+    
+}
+
+
+.add-t-header {
+    background: green;
+    padding: 10px;
+    height: 70px;
+}
+.add-t-header {
+    background: #EB683D;
+    padding: 10px;
+    height: 60px;
+    text-transform: uppercase;
+    font-size: 13px;
+    
+}
+.add-t-header h3 {
+    font-size: 18px;
+   
+    line-height: 46px;
+}
+.add-to-details {
+    margin-top: 0px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.add-toimg-holder img{
+    float: left;
+    display: block;
+}
+.add-tocart-text-holder {
+    float: left;
+    margin-left: 10px;
+    color: #222;
+}
+/*====counter-section*/
+.couter-wrapper {
+    width: 100%;
+    background-color: #EB6825;
+}
+
+#counter-up {
+    width: 100%;
+    height: 100px;
+   
+    
+
+}
+.count {
+    line-height: 100px;
+    color: white;
+    font-size: 25px;
+  
+}
+.songle-counter-item{
+   
+    text-align: center;
+        
+}
+span._f-icon {
+    font-size: 22px;
+    margin-right: 10px;
+}
+span.counter-title {
+    font-size: 20px;
+    margin-left: 4px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+/*how it works css*/
+._how-it-works {
+    box-shadow: 0px 0px 1px 1px #fff;
+    padding: 20px;
+    transition: .5s;
+}
+._how-it-works:hover {
+    box-shadow: 0px 0px 1px 1px #ddd;
+    padding: 20px;
+}
+._how-it-works>img.process_logo{
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    
+}
+._how-it-works>h3.process-title{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: serif;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+._how-it-works>p.process-details{
+    font-size: 12px;
+    font-family: serif;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+._how-it-works>span.num-badge{
+  background-color: #EE6825;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+
+
+/*favourite food css*/
+._favourite-food-item {
+    padding: 10px;
+}
+.favourit-food-wrapper a{
+    text-decoration: none;
+    color: #222;
+}
+._food_p-image>img._favourite_f_img{
+    height: 170px;
+    width: 100%;
+    position: relative;
+}
+
+._favourite_food_details>h3.food-title{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: serif;
+    text-transform: capitalize;
+    
+}
+.extra-item>span.item-list{
+    font-family: serif;
+    text-transform: capitalize;
+    font-size: 10px;
+    
+}
+
+
+.food_p-inner-home {
+    overflow: hidden;
+}
+.food_p-inner {
+    position: relative;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 50px;
+}
+
+
+.food_p-inner-home {
+    overflow: hidden;
+}
+
+.food_p-single-lead-icon a span {
+    font-size: 22px;
+}
+/*ribbon*/
+.food_p-icon-mask {
+    background-color: #EB6825;
+}
+.food_p-icon-mask {
+   z-index: 9999;
+        width: 100px;
+    height: 140px;
+    position: absolute;
+    left: -40px;
+    top: -65px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.food_p-icon-mask:hover {
+    background-color: #24caac;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.food_p-icon-mask small {
+        color: #fff;
+    position: absolute;
+        left: 58%;
+    bottom: 32%;
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-transform: rotate(-96deg);
+    -moz-transform: rotate(-96deg);
+    -ms-transform: rotate(-96deg);
+    -o-transform: rotate(-96deg);
+    transform: rotate(-96deg);
+}
+.food-item{
+   border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.pull-left span{
+    font-weight: bold;
+    font-size: 14px;
+}
+.add-tocart-btn{
+    border: 1px dotted #EE6825;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    color: #222;
+    transition: .5s;
+}
+.add-tocart-btn:hover{
+    background-color: #EE6825;
+    color: #fff;
+   
+}
+.listing-food{
+    padding: 10px;
+   
+}
+.listing-food>.img-holder img{
+    height: 40px;
+    width: 40px;
+    background-color:#fff;
+    border: 1px solid #ddd;
+        border-radius: 50%;
+    padding: 5px;
+}
+.food-company p{
+    line-height: 6px;
+}
+.food-company h5{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: serif;
+    font-weight: 600;
+    text-align: right;
+}
+.food-company p{
+    text-transform: capitalize;
+    font-size: 10px;
+    font-family: serif;
+    font-weight: 600;
+    text-align: right;
+}
+/*food-brand*/
+.owl-carousel button.owl-dot {
+    background: #ddd;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    width: 10px;
+    /* display: list-item; */
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    text-align: center;
+    
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 90%;
+    height: 125px;
+}
+.carousel-indicators li {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*restaurent page css*/
+
+
+/*====restaurent-list page======*/
+.nav-right {
+    text-align: right;
+}
+.tab-image {
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+}
+.tab-image img{
+    background-position: center;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.company-post-list{
+     background-color: #fff;
+    box-shadow: 0px 0px 3px 3px #ddd;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.food-review-right {
+    text-align: right;
+}
+span.icon-review i {
+    margin-right: 15px;
+    color: #F07F31;
+    font-weight: 600;
+    
+}
+.food-details {
+    margin-top: -17px;
+    margin-bottom: 15px;
+}
+.company-post-list a {
+text-decoration: none; 
+    text-transform: capitalize;
+    font-family: serif;
+    color: #222;
+    font-size: 20px;
+    transition: .5s;
+    
+}
+.company-post-list a:hover{
+    color: #222;
+}
+ul.rating-start li {
+    list-style: none;
+    display: inline-block;
+}
+.rating-start li i{
+    color: #F07F31;
+}
+a.view-btn {
+    background-color: #F07F31;
+    padding: 5px 7px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 3px;
+}   
+.nav-item a{
+    color: #222;
+}
+.breadcrumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+     padding: 0; 
+    margin-bottom: 1rem;
+    list-style: none;
+     background-color: transparent; 
+    border-radius: 0.25rem;
+}
+li.breadcrumb-item a {
+    color: #222;
+    /* font-size: 17px; */
+    font-family: serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+h3.filter-title {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: serif;
+    text-transform: capitalize;
+}
+.search-input{
+border-radius: 30px;
+    width: 100%;
+    position: relative;
+}
+.input-group-append{
+    position: absolute;
+    right: 20px;
+    margin-top: 12px;
+}
+.input-group > .form-control:not(:last-child), .input-group > .custom-select:not(:last-child) {
+     border-top-right-radius: 30px; 
+     border-bottom-right-radius: 30px; 
+}
+.sort-by-search label {
+     display: block; 
+    margin-bottom: .5rem;
+}
+
+span.spacing-label {
+   
+       padding-left: 10px;
+    text-transform: capitalize;
+    font-family: serif;
+    color: #222;
+}
+
+/*food-details css*/
+.food-banner{
+    background-image: url(../image/foodimg/section-2-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+h4.r-title {
+    font-size: 30px;
+    font-family: serif;
+    background-color: #222;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 8px 20px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+small.company-type {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: serif;
+    background-color: #222;
+    padding: 8px 20px;
+    color: #fff;
+   
+   
+}
+ul.rating-start.rating-bg {
+    background-color: #222;
+    padding: 8px 20px;
+    width: 371px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.your-order-details p {
+    font-size: 20px;
+    font-family: serif;
+    text-transform: capitalize;
+    color: #222;
+}
+
+.open-close-restaurent {
+    background-color: #ddd;
+    padding-top: 10px;
+   
+}
+.breadcrumb li a{
+    text-transform: capitalize;
+    color: #222;
+    font-size: 15px;
+}
+.all-food-single-item ul li {
+    list-style: none;
+    font-family: serif;
+    line-height: 32px;
+}
+.all-food-single-item ul li a{
+     font-size: 20px;
+    font-family: serif;
+    text-transform: capitalize;
+    color: #222;
+}
+.chhose-title {
+    background-color: #EB6825;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+.all-food-single-item li i {
+    padding-left: 10px;
+    color: #EB6825;
+}
+small.food-margin-right{
+    margin-right: 5px;
+}
+
+/*footer-wrapper*/
+.footer-wrapper{
+    background-color: #222;
+    padding: 15px;
+}
+h4.footer-title{
+    font-size: 22px;
+    font-family: serif;
+    color: #fff;
+    text-transform: capitalize;
+}
+.footer-social ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.footer-social ul li a{
+    color: #fff;
+}
+
+.footer-social ul li i{
+    background-color: #F07F31;
+    height: 40px;
+    width: 40px;
+    padding: 13px;
+    
+}
+.footer-payment{
+    text-align: right;
+}
+
