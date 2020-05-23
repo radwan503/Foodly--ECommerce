@@ -13,9 +13,178 @@
     <link rel="stylesheet" type="text/css" href="asset/css/default.css">
     <link rel="stylesheet" type="text/css" href="asset/css/style.css">
     <link rel="stylesheet" type="text/css" href="asset/css/responsive.css">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- add to cart modal  -->
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">shopping cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="px-4 px-lg-0">
+                        <div class="pb-5">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+                                        <!-- Shopping cart table -->
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="border-0 bg-light">
+                                                            <div class="p-2 px-3 text-uppercase">Product</div>
+                                                        </th>
+                                                        <th scope="col" class="border-0 bg-light">
+                                                            <div class="py-2 text-uppercase">Price</div>
+                                                        </th>
+                                                        <th scope="col" class="border-0 bg-light">
+                                                            <div class="py-2 text-uppercase">Quantity</div>
+                                                        </th>
+                                                        <th scope="col" class="border-0 bg-light">
+                                                            <div class="py-2 text-uppercase">Remove</div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" class="border-0">
+                                                            <div class="p-2">
+                                                                <img src="/asset/image/foodimg/mpfood-1.jpg" alt=""
+                                                                    width="70" class="img-fluid rounded shadow-sm">
+                                                                <div class="ml-3 d-inline-block align-middle">
+                                                                    <h5 class="mb-0"> <a href="#"
+                                                                            class="text-dark d-inline-block align-middle">Nature
+                                                                            Healthy Food</a></h5><span
+                                                                        class="text-muted font-weight-normal font-italic d-block">Category:
+                                                                        Food</span>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <td class="border-0 align-middle"><strong>$79.00</strong></td>
+                                                        <td class="border-0 align-middle"><strong>3</strong></td>
+                                                        <td class="border-0 align-middle"><a href="#"
+                                                                class="text-dark"><i class="fa fa-trash"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="p-2">
+                                                                <img src="asset/image/foodimg/mpfood-2.jpg" alt=""
+                                                                    width="70" class="img-fluid rounded shadow-sm">
+                                                                <div class="ml-3 d-inline-block align-middle">
+                                                                    <h5 class="mb-0"><a href="#"
+                                                                            class="text-dark d-inline-block">Chicken
+                                                                            Fried</a></h5><span
+                                                                        class="text-muted font-weight-normal font-italic">Category:
+                                                                        Food</span>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <td class="align-middle"><strong>$79.00</strong></td>
+                                                        <td class="align-middle"><strong>3</strong></td>
+                                                        <td class="align-middle"><a href="#" class="text-dark"><i
+                                                                    class="fa fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="p-2">
+                                                                <img src="asset/image/foodimg/mpfood-3.jpg" alt=""
+                                                                    width="70" class="img-fluid rounded shadow-sm">
+                                                                <div class="ml-3 d-inline-block align-middle">
+                                                                    <h5 class="mb-0"> <a href="#"
+                                                                            class="text-dark d-inline-block">Countrified
+                                                                            Salad</a></h5><span
+                                                                        class="text-muted font-weight-normal font-italic">Category:
+                                                                        Food</span>
+                                                                </div>
+                                                            </div>
+                                                        <td class="align-middle"><strong>$79.00</strong></td>
+                                                        <td class="align-middle"><strong>3</strong></td>
+                                                        <td class="align-middle"><a href="#" class="text-dark"><i
+                                                                    class="fa fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- End -->
+                                    </div>
+                                </div>
+
+                                <div class="row py-5 p-4 bg-white rounded shadow-sm">
+                                    <div class="col-lg-6">
+                                        <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">
+                                            Coupon code</div>
+                                        <div class="p-0">
+                                            <p class="font-italic mb-4">If you have a coupon code, please enter it in
+                                                the box below</p>
+                                            <div class="input-group mb-4 border rounded-pill p-2">
+                                                <input type="text" placeholder="Apply coupon"
+                                                    aria-describedby="button-addon3" class="form-control border-0">
+
+                                            </div>
+                                        </div>
+                                        <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">
+                                            Instructions for seller</div>
+                                        <div class="p-4">
+                                            <p class="font-italic mb-4">If you have some information for the seller you
+                                                can leave them in the box below</p>
+                                            <textarea name="" cols="30" rows="2" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">
+                                            Order summary </div>
+                                        <div class="p-0">
+                                            <p class="font-italic mb-4">Shipping and additional costs are calculated
+                                                based on values you have entered.</p>
+                                            <ul class="list-unstyled mb-4">
+                                                <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                                        class="text-muted">Order Subtotal
+                                                    </strong><strong>$390.00</strong></li>
+                                                <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                                        class="text-muted">Shipping and
+                                                        handling</strong><strong>$10.00</strong></li>
+                                                <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                                        class="text-muted">Tax</strong><strong>$0.00</strong></li>
+                                                <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                                        class="text-muted">Total</strong>
+                                                    <h5 class="font-weight-bold">$400.00</h5>
+                                                </li>
+                                            </ul><a href="#" class="btn btn-dark rounded-pill py-2 btn-block">Procceed
+                                                to checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!--   =====first navbar====-->
     <section class="top-nav">
         <div class="container">
@@ -23,8 +192,12 @@
                 <div class="col-md-6">
                     <div class="left-menu">
                         <ul>
-                            <li><a href="#">Call Us For Ordering -<i class="fa fa-phone"
-                                        aria-hidden="true"></i><span>01700-000000</span></a></li>
+                            <li>
+                                <a href="#">Call Us For Ordering -
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>01700-000000</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -52,8 +225,8 @@
 
     <div class="login-registration-modal">
         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog  modal-dialog-centered" role="document">
+            aria-hidden="true" style="z-index: 99999;">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header border-bottom-0">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -92,7 +265,6 @@
                                         data-placement="top" title="Linkedin">
                                         <i class="fab fa-linkedin"></i>
                                     </button>
-                                    </di>
                                 </div>
                             </div>
                         </div>
@@ -104,778 +276,781 @@
                     </div>
                 </div>
             </div>
-
+        </div>
     </div>
-        <!--    ====secound navbar=====-->
 
-        <div class="navbar navbar-expand-md navbar-dark bg-dark custom-navbar" role="navigation">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="./asset/image/icon/logo.png" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
+    <!--    ====secound navbar=====-->
+
+    <div class="navbar navbar-expand-md navbar-dark bg-dark custom-navbar" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./asset/image/icon/logo.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
 
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Shop</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown1">
-                                <li class="dropdown-item" href="#">
-                                    <a href="#">Vegatable</a>
-                                </li>
-                                <li class="dropdown-item" href="#">
-                                    <a href="#">Meats</a>
-                                </li>
-                                <li class="dropdown-item" href="#">
-                                    <a href="#">Tea</a>
-                                </li>
-                                <li class="dropdown-item" href="#">
-                                    <a href="#">Cake</a>
-                                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                            <li class="dropdown-item" href="#">
+                                <a href="./vegatable-shop.html">Vegatable</a>
+                            </li>
+                            <li class="dropdown-item" href="#">
+                                <a href="./fruits-shop.html">Fruits</a>
+                            </li>
+                            <li class="dropdown-item" href="#">
+                                <a href="#">Tea</a>
+                            </li>
+                            <li class="dropdown-item" href="#">
+                                <a href="#">Cake</a>
+                            </li>
 
-                            </ul>
-                        </li>
+                        </ul>
+                    </li>
 
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Reservation
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./reservation.html">Reservation
 
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Restaurent
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./restaurent.html">Restaurent
 
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">About
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./about.html">About
 
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Contact
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./contact.html">Contact
 
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link login-icon" data-toggle="tooltip" data-placement="top" title="Login">
-                                <span data-toggle="modal" data-target="#loginModal"><i class="fa fa-unlock-alt"
-                                        aria-hidden="true"></i></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link login-icon" data-toggle="tooltip" data-placement="top" title="Login">
+                            <span data-toggle="modal" data-target="#loginModal"><i class="fa fa-unlock-alt"
+                                    aria-hidden="true"></i></span>
 
-                            </a>
-                        </li>
+                        </a>
+                    </li>
 
-                        <li class="nav-item">
+                    <li class="nav-item">
 
-                            <div class="icon_cart icon_info">
-                                <div class="m_cart-group">
-                                    <a href="javascript:void(0)" class="cart show-info" data-class="info-header-cart">
-                                        <div class="num-items-in-cart">
-                                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                            <span class="cart_text">
-                                                <span class="number">0</span>
-                                            </span>
-                                        </div>
-                                    </a>
+                        <div class="icon_cart icon_info">
+                            <div class="m_cart-group">
+                                <a href="javascript:void(0)" class="cart show-info" data-class="info-header-cart">
+                                    <div class="num-items-in-cart" data-toggle="modal"
+                                        data-target=".bd-example-modal-lg">
+                                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                        <span class="cart_text">
+                                            <span class="number">3</span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--    restaurent-list page-->
+    <section class="restaurent-page-wrapper mt-50">
+        <div class="container">
+            <div class="restaurent-breadcrumb">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Restaurent list</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Dhanmondi</li>
+                    </ol>
+                </nav>
+                <h3 div class="searching-result">Showing in <strong>Dhanmondi</strong><small>(139
+                        restaurent)</small></h3>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filtering-left mt-30">
+                        <div class="input-search">
+                            <div class="input-group">
+                                <input class="form-control search-input py-2" type="search" value="search">
+                                <div class="input-group-append"> <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                        <div class="sort-by">
+                            <div class="sort-by-search mt-10 mb-20">
+                                <div class="form">
+                                    <h3 class="filter-title">Sort by</h3>
+                                    <label class="radio">
+                                        <input value="1" type="radio"><span class="spacing-label">Top rated</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input value="2" type="radio"><span class="spacing-label">Minimun order
+                                            value</span> </label>
+                                    <label class="radio">
+                                        <input value="3" type="radio"><span class="spacing-label">Alphabetic(A-Z)</span>
+                                    </label>
+
+                                </div>
+                            </div>
+                            <div class="sort-by-search mb-20">
+                                <div class="form">
+                                    <h3 class="filter-title">order type</h3>
+                                    <label class="checkbox">
+                                        <input value="1" type="checkbox"><span class="spacing-label">Free delivery
+                                        </span></label>
+                                    <label class="checkbox">
+                                        <input value="2" type="checkbox"><span class="spacing-label">pre-order</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input value="3" type="checkbox"><span class="spacing-label">Priyo card
+                                            accept </span></label>
+                                    <label class="checkbox">
+                                        <input value="4" type="checkbox"><span class="spacing-label">Reservation
+                                        </span></label>
+                                    <label class="checkbox">
+                                        <input value="5" type="checkbox"><span class="spacing-label">Deals </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="sort-by-search mb-20">
+                                <div class="form">
+                                    <h3 class="filter-title">Cuisine</h3>
+                                    <label class="checkbox">
+                                        <input value="1" type="checkbox"><span
+                                            class="spacing-label">Burger</span></label>
+                                    <label class="checkbox">
+                                        <input value="2" type="checkbox"><span class="spacing-label">Pizza</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input value="3" type="checkbox"><span class="spacing-label">Japaness
+                                        </span></label>
+                                    <label class="checkbox">
+                                        <input value="4" type="checkbox"><span class="spacing-label">Birynai</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input value="5" type="checkbox"><span class="spacing-label">Wraps</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input value="6" type="checkbox"><span class="spacing-label">Fast food
+                                        </span></label>
                                 </div>
                             </div>
 
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="most-popular-restaurent-list nav-right">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs small justify-content-end" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab1" role="tab"><i
+                                        class="fa fa-bars" aria-hidden="true"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab2" role="tab"><i
+                                        class="fa fa-th" aria-hidden="true"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab3" role="tab"><i
+                                        class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <div class="tab-content py-4">
+                            <div class="tab-pane active" id="tab1" role="tabpanel">
+                                <!--=================featured-listd-->
+                                <div class="featured">
+                                    <!-- single company-->
+                                    <div class="company-post-list">
+                                        <div class="row ">
+                                            <div class="col-md-9">
+                                                <div class="tab-image"> <img src="asset/image/icon/h_1.png" alt=""
+                                                        class="img-responsive"></div>
+                                                <h4><a href="#">cafe darbor</a></h4>
+                                                <small class="extra-item">
+                                                    <span class="item-list">apple juice</span>
+                                                    <span class="item-list">,</span>
+                                                    <span class="item-list">beef roast</span>
+                                                    <span class="item-list">,</span>
+                                                    <span class="item-list">cheese burger</span>
+                                                </small>
+                                            </div>
+                                            <div class="pull-right col-md-3">
+                                                <div class="food-review-right">
+                                                    <div class="filter-rating">
+                                                        <ul class="rating-start">
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="food-details"> <small class="clearfix">Min Order tk
+                                                            300</small> <small>delivery fee tk.60</small> </div>
+                                                    <div class="restaurent-review"> <span class="icon-review"><a
+                                                                href=""><i class="fa fa-heart-o"
+                                                                    aria-hidden="true"></i></a></span> <span><a
+                                                                href="food-details.html" class="view-btn">View
+                                                                Menu</a></span> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single company-->
+                                    <div class="company-post-list">
+                                        <div class="row ">
+                                            <div class="col-md-9">
+                                                <div class="tab-image"> <img src="asset/image/icon/h_2.png" alt=""
+                                                        class="img-responsive"></div>
+                                                <h4><a href="#">Cofee House</a></h4> <small class="extra-item">
+                                                    <span class="item-list">apple juice</span>
+                                                    <span class="item-list">,</span>
+                                                    <span class="item-list">beef roast</span>
+                                                    <span class="item-list">,</span>
+                                                    <span class="item-list">cheese burger</span>
+                                                </small>
+                                            </div>
+                                            <div class="pull-right col-md-3">
+                                                <div class="food-review-right">
+                                                    <div class="filter-rating">
+                                                        <ul class="rating-start">
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="food-details"> <small class="clearfix">Min Order tk
+                                                            300</small> <small>delivery fee tk.60</small> </div>
+                                                    <div class="restaurent-review"> <span class="icon-review"><a
+                                                                href=""><i class="fa fa-heart-o"
+                                                                    aria-hidden="true"></i></a></span> <span><a href="#"
+                                                                class="view-btn">View Menu</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single company-->
+                                    <div class="company-post-list">
+                                        <div class="row ">
+                                            <div class="col-md-9">
+                                                <div class="tab-image"> <img src="asset/image/icon/h_3.png" alt=""
+                                                        class="img-responsive"></div>
+                                                <h4><a href="#">Burger King</a></h4> <small class="extra-item">
+                                                    <span class="item-list">apple juice</span>
+                                                    <span class="item-list">,</span>
+                                                    <span class="item-list">beef roast</span>
+                                                    <span class="item-list">,</span>
+                                                    <span class="item-list">cheese burger</span>
+                                                </small>
+                                            </div>
+                                            <div class="pull-right col-md-3">
+                                                <div class="food-review-right">
+                                                    <div class="filter-rating">
+                                                        <ul class="rating-start">
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                            <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="food-details"> <small class="clearfix">Min Order tk
+                                                            300</small> <small>delivery fee tk.60</small> </div>
+                                                    <div class="restaurent-review"> <span class="icon-review"><a
+                                                                href=""><i class="fa fa-heart-o"
+                                                                    aria-hidden="true"></i></a></span> <span><a href="#"
+                                                                class="view-btn">View Menu</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab2" role="tabpanel">
+                                <div class="popular-food-inner">
+                                    <div class="row">
+                                        <!--single item-->
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <div class="food_p-inner food_p-inner-home">
+                                                    <!-- ribbon-->
+                                                    <div class="food_p-icon-mask green-bg">
+                                                        <small>20%
+                                                            <br>
+                                                            <span style="margin-left:  18px;">off</span>
+                                                        </small>
+                                                    </div>
+                                                    <!-- iMage-->
+                                                    <div class="_food_p-image">
+                                                        <img class="_favourite_f_img"
+                                                            src="asset/image/foodimg/blog-1.jpg" alt=""> </div>
+                                                    <!-- food footer -->
+                                                    <div class="_favourite-food-item">
+                                                        <div class="_favourite_food_details">
+                                                            <h3 class="food-title">Nature Healthy Food</h3>
+                                                            <small class="extra-item">
+                                                                <span class="item-list">apple juice</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">beef roast</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">cheese burger</span>
+                                                            </small>
+                                                        </div>
+                                                        <div class="food-item clearfix mt-10">
+                                                            <div class="pull-left">
+                                                                <span>80.00 BDT</span>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <a href="#" class="add-tocart-btn">add to cart</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-food clearfix">
+                                                        <div class="img-holder pull-left">
+                                                            <img src="asset/image/icon/h_1.png" alt="">
+                                                            <span class="badge badge-success shop-time">open</span>
+                                                        </div>
+                                                        <div class="food-company pull-right">
+                                                            <h5>kfc</h5>
+                                                            <p>fast food company</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--single item-->
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <div class="food_p-inner food_p-inner-home">
+                                                    <!-- ribbon-->
+                                                    <div class="food_p-icon-mask green-bg">
+                                                        <small>20%
+                                                            <br>
+                                                            <span style="margin-left:  18px;">off</span>
+                                                        </small>
+                                                    </div>
+                                                    <!-- iMage-->
+                                                    <div class="_food_p-image">
+                                                        <img class="_favourite_f_img"
+                                                            src="asset/image/foodimg/blog-2.jpg" alt=""> </div>
+                                                    <!-- food footer -->
+                                                    <div class="_favourite-food-item">
+                                                        <div class="_favourite_food_details">
+                                                            <h3 class="food-title">Countrified Salad</h3>
+                                                            <small class="extra-item">
+                                                                <span class="item-list">apple juice</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">beef roast</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">cheese burger</span>
+                                                            </small>
+                                                        </div>
+                                                        <div class="food-item clearfix mt-10">
+                                                            <div class="pull-left">
+                                                                <span>80.00 BDT</span>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <a href="#" class="add-tocart-btn">add to cart</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-food clearfix">
+                                                        <div class="img-holder pull-left">
+                                                            <img src="asset/image/icon/h_2.png" alt="">
+                                                            <span class="badge badge-danger shop-time">close</span>
+                                                        </div>
+                                                        <div class="food-company pull-right">
+                                                            <h5>kfc</h5>
+                                                            <p>fast food company</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--single item-->
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <div class="food_p-inner food_p-inner-home">
+                                                    <!-- ribbon-->
+                                                    <div class="food_p-icon-mask green-bg">
+                                                        <small>20%
+                                                            <br>
+                                                            <span style="margin-left:  18px;">off</span>
+                                                        </small>
+                                                    </div>
+                                                    <!-- iMage-->
+                                                    <div class="_food_p-image">
+                                                        <img class="_favourite_f_img"
+                                                            src="asset/image/foodimg/mpfood-1.jpg" alt=""> </div>
+                                                    <!-- food footer -->
+                                                    <div class="_favourite-food-item">
+                                                        <div class="_favourite_food_details">
+                                                            <h3 class="food-title">Roasted Chicken Salad...</h3>
+                                                            <small class="extra-item">
+                                                                <span class="item-list">apple juice</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">beef roast</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">cheese burger</span>
+                                                            </small>
+                                                        </div>
+                                                        <div class="food-item clearfix mt-10">
+                                                            <div class="pull-left">
+                                                                <span>80.00 BDT</span>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <a href="#" class="add-tocart-btn">add to cart</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-food clearfix">
+                                                        <div class="img-holder pull-left">
+                                                            <img src="asset/image/icon/h_3.png" alt=""> </div>
+                                                        <div class="food-company pull-right">
+                                                            <h5>kfc</h5>
+                                                            <p>fast food company</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--single item-->
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <div class="food_p-inner food_p-inner-home">
+                                                    <!-- ribbon-->
+                                                    <div class="food_p-icon-mask green-bg">
+                                                        <small>20%
+                                                            <br>
+                                                            <span style="margin-left:  18px;">off</span>
+                                                        </small>
+                                                    </div>
+                                                    <!-- iMage-->
+                                                    <div class="_food_p-image">
+                                                        <img class="_favourite_f_img"
+                                                            src="asset/image/foodimg/mpfood-2.jpg" alt=""> </div>
+                                                    <!-- food footer -->
+                                                    <div class="_favourite-food-item">
+                                                        <div class="_favourite_food_details">
+                                                            <h3 class="food-title">Beans Salad</h3>
+                                                            <small class="extra-item">
+                                                                <span class="item-list">apple juice</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">beef roast</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">cheese burger</span>
+                                                            </small>
+                                                        </div>
+                                                        <div class="food-item clearfix mt-10">
+                                                            <div class="pull-left">
+                                                                <span>80.00 BDT</span>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <a href="#" class="add-tocart-btn">add to cart</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-food clearfix">
+                                                        <div class="img-holder pull-left">
+                                                            <img src="asset/image/icon/h_4.png" alt=""> </div>
+                                                        <div class="food-company pull-right">
+                                                            <h5>kfc</h5>
+                                                            <p>fast food company</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--single item-->
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <div class="food_p-inner food_p-inner-home">
+                                                    <!-- ribbon-->
+                                                    <div class="food_p-icon-mask green-bg">
+                                                        <small>20%
+                                                            <br>
+                                                            <span style="margin-left:  18px;">off</span>
+                                                        </small>
+                                                    </div>
+                                                    <!-- iMage-->
+                                                    <div class="_food_p-image">
+                                                        <img class="_favourite_f_img"
+                                                            src="asset/image/foodimg/mpfood-3.jpg" alt=""> </div>
+                                                    <!-- food footer -->
+                                                    <div class="_favourite-food-item">
+                                                        <div class="_favourite_food_details">
+                                                            <h3 class="food-title">Spring Salad</h3>
+                                                            <small class="extra-item">
+                                                                <span class="item-list">apple juice</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">beef roast</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">cheese burger</span>
+                                                            </small>
+                                                        </div>
+                                                        <div class="food-item clearfix mt-10">
+                                                            <div class="pull-left">
+                                                                <span>80.00 BDT</span>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <a href="#" class="add-tocart-btn">add to cart</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-food clearfix">
+                                                        <div class="img-holder pull-left">
+                                                            <img src="asset/image/icon/h_5.png" alt=""> </div>
+                                                        <div class="food-company pull-right">
+                                                            <h5>kfc</h5>
+                                                            <p>fast food company</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--single item-->
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <div class="food_p-inner food_p-inner-home">
+                                                    <!-- ribbon-->
+                                                    <div class="food_p-icon-mask green-bg">
+                                                        <small>20%
+                                                            <br>
+                                                            <span style="margin-left:  18px;">off</span>
+                                                        </small>
+                                                    </div>
+                                                    <!-- iMage-->
+                                                    <div class="_food_p-image">
+                                                        <img class="_favourite_f_img"
+                                                            src="asset/image/foodimg/blog-1.jpg" alt=""> </div>
+                                                    <!-- food footer -->
+                                                    <div class="_favourite-food-item">
+                                                        <div class="_favourite_food_details">
+                                                            <h3 class="food-title">Chicken Fried</h3>
+                                                            <small class="extra-item">
+                                                                <span class="item-list">apple juice</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">beef roast</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">cheese burger</span>
+                                                            </small>
+                                                        </div>
+                                                        <div class="food-item clearfix mt-10">
+                                                            <div class="pull-left">
+                                                                <span>80.00 BDT</span>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <a href="#" class="add-tocart-btn">add to cart</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-food clearfix">
+                                                        <div class="img-holder pull-left">
+                                                            <img src="asset/image/icon/h_6.png" alt=""> </div>
+                                                        <div class="food-company pull-right">
+                                                            <h5>kfc</h5>
+                                                            <p>fast food company</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--single item-->
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <div class="food_p-inner food_p-inner-home">
+                                                    <!-- ribbon-->
+                                                    <div class="food_p-icon-mask green-bg">
+                                                        <small>20%
+                                                            <br>
+                                                            <span style="margin-left:  18px;">off</span>
+                                                        </small>
+                                                    </div>
+                                                    <!-- iMage-->
+                                                    <div class="_food_p-image">
+                                                        <img class="_favourite_f_img"
+                                                            src="asset/image/foodimg/Food3.jpg" alt=""> </div>
+                                                    <!-- food footer -->
+                                                    <div class="_favourite-food-item">
+                                                        <div class="_favourite_food_details">
+                                                            <h3 class="food-title">Nature Healthy Food</h3>
+                                                            <small class="extra-item">
+                                                                <span class="item-list">apple juice</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">beef roast</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">cheese burger</span>
+                                                            </small>
+                                                        </div>
+                                                        <div class="food-item clearfix mt-10">
+                                                            <div class="pull-left">
+                                                                <span>80.00 BDT</span>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <a href="#" class="add-tocart-btn">add to cart</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-food clearfix">
+                                                        <div class="img-holder pull-left">
+                                                            <img src="asset/image/icon/h_2.png" alt=""> </div>
+                                                        <div class="food-company pull-right">
+                                                            <h5>kfc</h5>
+                                                            <p>fast food company</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--single item-->
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <div class="food_p-inner food_p-inner-home">
+                                                    <!-- ribbon-->
+                                                    <div class="food_p-icon-mask green-bg">
+                                                        <small>20%
+                                                            <br>
+                                                            <span style="margin-left:  18px;">off</span>
+                                                        </small>
+                                                    </div>
+                                                    <!-- iMage-->
+                                                    <div class="_food_p-image">
+                                                        <img class="_favourite_f_img" src="asset/image/foodimg/Food.png"
+                                                            alt=""> </div>
+                                                    <!-- food footer -->
+                                                    <div class="_favourite-food-item">
+                                                        <div class="_favourite_food_details">
+                                                            <h3 class="food-title">Burger Chicken</h3>
+                                                            <small class="extra-item">
+                                                                <span class="item-list">apple juice</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">beef roast</span>
+                                                                <span class="item-list">,</span>
+                                                                <span class="item-list">cheese burger</span>
+                                                            </small>
+                                                        </div>
+                                                        <div class="food-item clearfix mt-10">
+                                                            <div class="pull-left">
+                                                                <span>80.00 BDT</span>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <a href="#" class="add-tocart-btn">add to cart</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-food clearfix">
+                                                        <div class="img-holder pull-left">
+                                                            <img src="asset/image/icon/h_1.png" alt=""> </div>
+                                                        <div class="food-company pull-right">
+                                                            <h5>kfc</h5>
+                                                            <p>fast food company</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab3" role="tabpanel">
+                                <div class="location">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14608.27035202087!2d90.3707893197754!3d23.7449691!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1534773117714"
+                                        width="800" height="600" frameborder="0" style="border:0"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--    restaurent-list page-->
-        <section class="restaurent-page-wrapper mt-50">
-            <div class="container">
-                <div class="restaurent-breadcrumb">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Restaurent list</a></li>
-                            <li class="breadcrumb-item" aria-current="page">Dhanmondi</li>
-                        </ol>
-                    </nav>
-                    <h3 div class="searching-result">Showing in <strong>Dhanmondi</strong><small>(139
-                            restaurent)</small></h3>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="filtering-left mt-30">
-                            <div class="input-search">
-                                <div class="input-group">
-                                    <input class="form-control search-input py-2" type="search" value="search">
-                                    <div class="input-group-append"> <i class="fa fa-search"></i> </div>
-                                </div>
-                            </div>
-                            <div class="sort-by">
-                                <div class="sort-by-search mt-10 mb-20">
-                                    <div class="form">
-                                        <h3 class="filter-title">Sort by</h3>
-                                        <label class="radio">
-                                            <input value="1" type="radio"><span class="spacing-label">Top rated</span>
-                                        </label>
-                                        <label class="radio">
-                                            <input value="2" type="radio"><span class="spacing-label">Minimun order
-                                                value</span> </label>
-                                        <label class="radio">
-                                            <input value="3" type="radio"><span
-                                                class="spacing-label">Alphabetic(A-Z)</span> </label>
-
-                                    </div>
-                                </div>
-                                <div class="sort-by-search mb-20">
-                                    <div class="form">
-                                        <h3 class="filter-title">order type</h3>
-                                        <label class="checkbox">
-                                            <input value="1" type="checkbox"><span class="spacing-label">Free delivery
-                                            </span></label>
-                                        <label class="checkbox">
-                                            <input value="2" type="checkbox"><span
-                                                class="spacing-label">pre-order</span> </label>
-                                        <label class="checkbox">
-                                            <input value="3" type="checkbox"><span class="spacing-label">Priyo card
-                                                accept </span></label>
-                                        <label class="checkbox">
-                                            <input value="4" type="checkbox"><span class="spacing-label">Reservation
-                                            </span></label>
-                                        <label class="checkbox">
-                                            <input value="5" type="checkbox"><span class="spacing-label">Deals </span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="sort-by-search mb-20">
-                                    <div class="form">
-                                        <h3 class="filter-title">Cuisine</h3>
-                                        <label class="checkbox">
-                                            <input value="1" type="checkbox"><span
-                                                class="spacing-label">Burger</span></label>
-                                        <label class="checkbox">
-                                            <input value="2" type="checkbox"><span class="spacing-label">Pizza</span>
-                                        </label>
-                                        <label class="checkbox">
-                                            <input value="3" type="checkbox"><span class="spacing-label">Japaness
-                                            </span></label>
-                                        <label class="checkbox">
-                                            <input value="4" type="checkbox"><span class="spacing-label">Birynai</span>
-                                        </label>
-                                        <label class="checkbox">
-                                            <input value="5" type="checkbox"><span class="spacing-label">Wraps</span>
-                                        </label>
-                                        <label class="checkbox">
-                                            <input value="6" type="checkbox"><span class="spacing-label">Fast food
-                                            </span></label>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="most-popular-restaurent-list nav-right">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs small justify-content-end" role="tablist">
-                                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab1"
-                                        role="tab"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab2" role="tab"><i class="fa fa-th" aria-hidden="true"></i></a></li>
-                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab3"
-                                        role="tab"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
-                            </ul>
-                            <div class="tab-content py-4">
-                                <div class="tab-pane active" id="tab1" role="tabpanel">
-                                    <!--=================featured-listd-->
-                                    <div class="featured">
-                                        <!-- single company-->
-                                        <div class="company-post-list">
-                                            <div class="row ">
-                                                <div class="col-md-9">
-                                                    <div class="tab-image"> <img src="asset/image/icon/h_1.png" alt=""
-                                                            class="img-responsive"></div>
-                                                    <h4><a href="#">cafe darbor</a></h4>
-                                                    <small class="extra-item">
-                                                        <span class="item-list">apple juice</span>
-                                                        <span class="item-list">,</span>
-                                                        <span class="item-list">beef roast</span>
-                                                        <span class="item-list">,</span>
-                                                        <span class="item-list">cheese burger</span>
-                                                    </small>
-                                                </div>
-                                                <div class="pull-right col-md-3">
-                                                    <div class="food-review-right">
-                                                        <div class="filter-rating">
-                                                            <ul class="rating-start">
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="food-details"> <small class="clearfix">Min Order tk
-                                                                300</small> <small>delivery fee tk.60</small> </div>
-                                                        <div class="restaurent-review"> <span class="icon-review"><a
-                                                                    href=""><i class="fa fa-heart-o"
-                                                                        aria-hidden="true"></i></a></span> <span><a
-                                                                    href="food-details.html" class="view-btn">View
-                                                                    Menu</a></span> </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- single company-->
-                                        <div class="company-post-list">
-                                            <div class="row ">
-                                                <div class="col-md-9">
-                                                    <div class="tab-image"> <img src="asset/image/icon/h_2.png" alt=""
-                                                            class="img-responsive"></div>
-                                                    <h4><a href="#">Cofee House</a></h4> <small class="extra-item">
-                                                        <span class="item-list">apple juice</span>
-                                                        <span class="item-list">,</span>
-                                                        <span class="item-list">beef roast</span>
-                                                        <span class="item-list">,</span>
-                                                        <span class="item-list">cheese burger</span>
-                                                    </small>
-                                                </div>
-                                                <div class="pull-right col-md-3">
-                                                    <div class="food-review-right">
-                                                        <div class="filter-rating">
-                                                            <ul class="rating-start">
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="food-details"> <small class="clearfix">Min Order tk
-                                                                300</small> <small>delivery fee tk.60</small> </div>
-                                                        <div class="restaurent-review"> <span class="icon-review"><a
-                                                                    href=""><i class="fa fa-heart-o"
-                                                                        aria-hidden="true"></i></a></span> <span><a
-                                                                    href="#" class="view-btn">View Menu</a></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- single company-->
-                                        <div class="company-post-list">
-                                            <div class="row ">
-                                                <div class="col-md-9">
-                                                    <div class="tab-image"> <img src="asset/image/icon/h_3.png" alt=""
-                                                            class="img-responsive"></div>
-                                                    <h4><a href="#">Burger King</a></h4> <small class="extra-item">
-                                                        <span class="item-list">apple juice</span>
-                                                        <span class="item-list">,</span>
-                                                        <span class="item-list">beef roast</span>
-                                                        <span class="item-list">,</span>
-                                                        <span class="item-list">cheese burger</span>
-                                                    </small>
-                                                </div>
-                                                <div class="pull-right col-md-3">
-                                                    <div class="food-review-right">
-                                                        <div class="filter-rating">
-                                                            <ul class="rating-start">
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star"></i></li>
-                                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="food-details"> <small class="clearfix">Min Order tk
-                                                                300</small> <small>delivery fee tk.60</small> </div>
-                                                        <div class="restaurent-review"> <span class="icon-review"><a
-                                                                    href=""><i class="fa fa-heart-o"
-                                                                        aria-hidden="true"></i></a></span> <span><a
-                                                                    href="#" class="view-btn">View Menu</a></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane" id="tab2" role="tabpanel">
-                                    <div class="popular-food-inner">
-                                        <div class="row">
-                                            <!--single item-->
-                                            <div class="col-md-4">
-                                                <a href="#">
-                                                    <div class="food_p-inner food_p-inner-home">
-                                                        <!-- ribbon-->
-                                                        <div class="food_p-icon-mask green-bg">
-                                                            <small>20%
-                                                                <br>
-                                                                <span style="margin-left:  18px;">off</span>
-                                                            </small>
-                                                        </div>
-                                                        <!-- iMage-->
-                                                        <div class="_food_p-image">
-                                                            <img class="_favourite_f_img"
-                                                                src="asset/image/foodimg/blog-1.jpg" alt=""> </div>
-                                                        <!-- food footer -->
-                                                        <div class="_favourite-food-item">
-                                                            <div class="_favourite_food_details">
-                                                                <h3 class="food-title">Nature Healthy Food</h3>
-                                                                <small class="extra-item">
-                                                                    <span class="item-list">apple juice</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">beef roast</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">cheese burger</span>
-                                                                </small>
-                                                            </div>
-                                                            <div class="food-item clearfix mt-10">
-                                                                <div class="pull-left">
-                                                                    <span>80.00 BDT</span>
-                                                                </div>
-                                                                <div class="pull-right">
-                                                                    <a href="#" class="add-tocart-btn">add to cart</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="listing-food clearfix">
-                                                            <div class="img-holder pull-left">
-                                                                <img src="asset/image/icon/h_1.png" alt="">
-                                                                <span class="badge badge-success shop-time">open</span>
-                                                            </div>
-                                                            <div class="food-company pull-right">
-                                                                <h5>kfc</h5>
-                                                                <p>fast food company</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <!--single item-->
-                                            <div class="col-md-4">
-                                                <a href="#">
-                                                    <div class="food_p-inner food_p-inner-home">
-                                                        <!-- ribbon-->
-                                                        <div class="food_p-icon-mask green-bg">
-                                                            <small>20%
-                                                                <br>
-                                                                <span style="margin-left:  18px;">off</span>
-                                                            </small>
-                                                        </div>
-                                                        <!-- iMage-->
-                                                        <div class="_food_p-image">
-                                                            <img class="_favourite_f_img"
-                                                                src="asset/image/foodimg/blog-2.jpg" alt=""> </div>
-                                                        <!-- food footer -->
-                                                        <div class="_favourite-food-item">
-                                                            <div class="_favourite_food_details">
-                                                                <h3 class="food-title">Countrified Salad</h3>
-                                                                <small class="extra-item">
-                                                                    <span class="item-list">apple juice</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">beef roast</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">cheese burger</span>
-                                                                </small>
-                                                            </div>
-                                                            <div class="food-item clearfix mt-10">
-                                                                <div class="pull-left">
-                                                                    <span>80.00 BDT</span>
-                                                                </div>
-                                                                <div class="pull-right">
-                                                                    <a href="#" class="add-tocart-btn">add to cart</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="listing-food clearfix">
-                                                            <div class="img-holder pull-left">
-                                                                <img src="asset/image/icon/h_2.png" alt="">
-                                                                <span class="badge badge-danger shop-time">close</span>
-                                                            </div>
-                                                            <div class="food-company pull-right">
-                                                                <h5>kfc</h5>
-                                                                <p>fast food company</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <!--single item-->
-                                            <div class="col-md-4">
-                                                <a href="#">
-                                                    <div class="food_p-inner food_p-inner-home">
-                                                        <!-- ribbon-->
-                                                        <div class="food_p-icon-mask green-bg">
-                                                            <small>20%
-                                                                <br>
-                                                                <span style="margin-left:  18px;">off</span>
-                                                            </small>
-                                                        </div>
-                                                        <!-- iMage-->
-                                                        <div class="_food_p-image">
-                                                            <img class="_favourite_f_img"
-                                                                src="asset/image/foodimg/mpfood-1.jpg" alt=""> </div>
-                                                        <!-- food footer -->
-                                                        <div class="_favourite-food-item">
-                                                            <div class="_favourite_food_details">
-                                                                <h3 class="food-title">Roasted Chicken Salad...</h3>
-                                                                <small class="extra-item">
-                                                                    <span class="item-list">apple juice</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">beef roast</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">cheese burger</span>
-                                                                </small>
-                                                            </div>
-                                                            <div class="food-item clearfix mt-10">
-                                                                <div class="pull-left">
-                                                                    <span>80.00 BDT</span>
-                                                                </div>
-                                                                <div class="pull-right">
-                                                                    <a href="#" class="add-tocart-btn">add to cart</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="listing-food clearfix">
-                                                            <div class="img-holder pull-left">
-                                                                <img src="asset/image/icon/h_3.png" alt=""> </div>
-                                                            <div class="food-company pull-right">
-                                                                <h5>kfc</h5>
-                                                                <p>fast food company</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <!--single item-->
-                                            <div class="col-md-4">
-                                                <a href="#">
-                                                    <div class="food_p-inner food_p-inner-home">
-                                                        <!-- ribbon-->
-                                                        <div class="food_p-icon-mask green-bg">
-                                                            <small>20%
-                                                                <br>
-                                                                <span style="margin-left:  18px;">off</span>
-                                                            </small>
-                                                        </div>
-                                                        <!-- iMage-->
-                                                        <div class="_food_p-image">
-                                                            <img class="_favourite_f_img"
-                                                                src="asset/image/foodimg/mpfood-2.jpg" alt=""> </div>
-                                                        <!-- food footer -->
-                                                        <div class="_favourite-food-item">
-                                                            <div class="_favourite_food_details">
-                                                                <h3 class="food-title">Beans Salad</h3>
-                                                                <small class="extra-item">
-                                                                    <span class="item-list">apple juice</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">beef roast</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">cheese burger</span>
-                                                                </small>
-                                                            </div>
-                                                            <div class="food-item clearfix mt-10">
-                                                                <div class="pull-left">
-                                                                    <span>80.00 BDT</span>
-                                                                </div>
-                                                                <div class="pull-right">
-                                                                    <a href="#" class="add-tocart-btn">add to cart</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="listing-food clearfix">
-                                                            <div class="img-holder pull-left">
-                                                                <img src="asset/image/icon/h_4.png" alt=""> </div>
-                                                            <div class="food-company pull-right">
-                                                                <h5>kfc</h5>
-                                                                <p>fast food company</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <!--single item-->
-                                            <div class="col-md-4">
-                                                <a href="#">
-                                                    <div class="food_p-inner food_p-inner-home">
-                                                        <!-- ribbon-->
-                                                        <div class="food_p-icon-mask green-bg">
-                                                            <small>20%
-                                                                <br>
-                                                                <span style="margin-left:  18px;">off</span>
-                                                            </small>
-                                                        </div>
-                                                        <!-- iMage-->
-                                                        <div class="_food_p-image">
-                                                            <img class="_favourite_f_img"
-                                                                src="asset/image/foodimg/mpfood-3.jpg" alt=""> </div>
-                                                        <!-- food footer -->
-                                                        <div class="_favourite-food-item">
-                                                            <div class="_favourite_food_details">
-                                                                <h3 class="food-title">Spring Salad</h3>
-                                                                <small class="extra-item">
-                                                                    <span class="item-list">apple juice</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">beef roast</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">cheese burger</span>
-                                                                </small>
-                                                            </div>
-                                                            <div class="food-item clearfix mt-10">
-                                                                <div class="pull-left">
-                                                                    <span>80.00 BDT</span>
-                                                                </div>
-                                                                <div class="pull-right">
-                                                                    <a href="#" class="add-tocart-btn">add to cart</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="listing-food clearfix">
-                                                            <div class="img-holder pull-left">
-                                                                <img src="asset/image/icon/h_5.png" alt=""> </div>
-                                                            <div class="food-company pull-right">
-                                                                <h5>kfc</h5>
-                                                                <p>fast food company</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <!--single item-->
-                                            <div class="col-md-4">
-                                                <a href="#">
-                                                    <div class="food_p-inner food_p-inner-home">
-                                                        <!-- ribbon-->
-                                                        <div class="food_p-icon-mask green-bg">
-                                                            <small>20%
-                                                                <br>
-                                                                <span style="margin-left:  18px;">off</span>
-                                                            </small>
-                                                        </div>
-                                                        <!-- iMage-->
-                                                        <div class="_food_p-image">
-                                                            <img class="_favourite_f_img"
-                                                                src="asset/image/foodimg/blog-1.jpg" alt=""> </div>
-                                                        <!-- food footer -->
-                                                        <div class="_favourite-food-item">
-                                                            <div class="_favourite_food_details">
-                                                                <h3 class="food-title">Chicken Fried</h3>
-                                                                <small class="extra-item">
-                                                                    <span class="item-list">apple juice</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">beef roast</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">cheese burger</span>
-                                                                </small>
-                                                            </div>
-                                                            <div class="food-item clearfix mt-10">
-                                                                <div class="pull-left">
-                                                                    <span>80.00 BDT</span>
-                                                                </div>
-                                                                <div class="pull-right">
-                                                                    <a href="#" class="add-tocart-btn">add to cart</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="listing-food clearfix">
-                                                            <div class="img-holder pull-left">
-                                                                <img src="asset/image/icon/h_6.png" alt=""> </div>
-                                                            <div class="food-company pull-right">
-                                                                <h5>kfc</h5>
-                                                                <p>fast food company</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <!--single item-->
-                                            <div class="col-md-4">
-                                                <a href="#">
-                                                    <div class="food_p-inner food_p-inner-home">
-                                                        <!-- ribbon-->
-                                                        <div class="food_p-icon-mask green-bg">
-                                                            <small>20%
-                                                                <br>
-                                                                <span style="margin-left:  18px;">off</span>
-                                                            </small>
-                                                        </div>
-                                                        <!-- iMage-->
-                                                        <div class="_food_p-image">
-                                                            <img class="_favourite_f_img"
-                                                                src="asset/image/foodimg/Food3.jpg" alt=""> </div>
-                                                        <!-- food footer -->
-                                                        <div class="_favourite-food-item">
-                                                            <div class="_favourite_food_details">
-                                                                <h3 class="food-title">Nature Healthy Food</h3>
-                                                                <small class="extra-item">
-                                                                    <span class="item-list">apple juice</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">beef roast</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">cheese burger</span>
-                                                                </small>
-                                                            </div>
-                                                            <div class="food-item clearfix mt-10">
-                                                                <div class="pull-left">
-                                                                    <span>80.00 BDT</span>
-                                                                </div>
-                                                                <div class="pull-right">
-                                                                    <a href="#" class="add-tocart-btn">add to cart</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="listing-food clearfix">
-                                                            <div class="img-holder pull-left">
-                                                                <img src="asset/image/icon/h_2.png" alt=""> </div>
-                                                            <div class="food-company pull-right">
-                                                                <h5>kfc</h5>
-                                                                <p>fast food company</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <!--single item-->
-                                            <div class="col-md-4">
-                                                <a href="#">
-                                                    <div class="food_p-inner food_p-inner-home">
-                                                        <!-- ribbon-->
-                                                        <div class="food_p-icon-mask green-bg">
-                                                            <small>20%
-                                                                <br>
-                                                                <span style="margin-left:  18px;">off</span>
-                                                            </small>
-                                                        </div>
-                                                        <!-- iMage-->
-                                                        <div class="_food_p-image">
-                                                            <img class="_favourite_f_img"
-                                                                src="asset/image/foodimg/Food.png" alt=""> </div>
-                                                        <!-- food footer -->
-                                                        <div class="_favourite-food-item">
-                                                            <div class="_favourite_food_details">
-                                                                <h3 class="food-title">Burger Chicken</h3>
-                                                                <small class="extra-item">
-                                                                    <span class="item-list">apple juice</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">beef roast</span>
-                                                                    <span class="item-list">,</span>
-                                                                    <span class="item-list">cheese burger</span>
-                                                                </small>
-                                                            </div>
-                                                            <div class="food-item clearfix mt-10">
-                                                                <div class="pull-left">
-                                                                    <span>80.00 BDT</span>
-                                                                </div>
-                                                                <div class="pull-right">
-                                                                    <a href="#" class="add-tocart-btn">add to cart</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="listing-food clearfix">
-                                                            <div class="img-holder pull-left">
-                                                                <img src="asset/image/icon/h_1.png" alt=""> </div>
-                                                            <div class="food-company pull-right">
-                                                                <h5>kfc</h5>
-                                                                <p>fast food company</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane" id="tab3" role="tabpanel">
-                                    <div class="location">
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14608.27035202087!2d90.3707893197754!3d23.7449691!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1534773117714"
-                                            width="800" height="600" frameborder="0" style="border:0"
-                                            allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    </section>
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="footer-title">Stay In touch</h4>
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-        <footer class="footer-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4 class="footer-title">Stay In touch</h4>
+                <div class="col-md-6">
+                    <div class="footer-payment pull-right">
+                        <h4 class="footer-title">Our Payment method</h4>
                         <div class="footer-social">
                             <ul>
                                 <li>
                                     <a href="">
-                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <i class="fa fa-cc-visa" aria-hidden="true"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        <i class="fa fa-cc-discover" aria-hidden="true"></i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="footer-payment pull-right">
-                            <h4 class="footer-title">Our Payment method</h4>
-                            <div class="footer-social">
-                                <ul>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa fa-cc-visa" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="fa fa-cc-discover" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
-        <script src="asset/js/jquery-3.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src="asset/js/bootstrap.min.js"></script>
-        <script src="asset/js/owl.carousel.min.js"></script>
-        <script src="asset/js/main.js"></script>
+    <script src="asset/js/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/owl.carousel.min.js"></script>
+    <script src="asset/js/main.js"></script>
 
 </body>
 

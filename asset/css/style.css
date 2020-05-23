@@ -157,18 +157,18 @@ a.nav-link.login-icon {
     margin-right: 12px;
 }
 
-.left-menu ul {
+.top-nav .left-menu ul {
     margin: 0;
     list-style: none;
     text-align: left;
 }
 
-.left-menu li {
+.top-nav .left-menu li {
     display: inline-block;
     position: relative;
 }
 
-.left-menu li a {
+.top-nav .left-menu li a {
     color: #222;
     font-weight: 600;
     display: block;
@@ -178,11 +178,11 @@ a.nav-link.login-icon {
     transition: .5s;
 }
 
-.left-menu li a:hover {
+.top-nav .left-menu li a:hover {
     color: #EB6825;
 }
 
-.left-menu li a i {
+.top-nav .left-menu li a i {
     height: 20px;
     width: 20px;
     border-radius: 100%;
@@ -190,18 +190,18 @@ a.nav-link.login-icon {
     margin-right: 5px;
 }
 
-.menu ul {
+.top-nav .menu ul {
     margin: 0;
     list-style: none;
     text-align: right;
 }
 
-.menu li {
+.top-nav .menu li {
     display: inline-block;
     position: relative;
 }
 
-.menu li a {
+.top-nav .menu li a {
     color: #222;
     font-weight: 600;
     display: block;
@@ -211,17 +211,17 @@ a.nav-link.login-icon {
     transition: .5s;
 }
 
-.menu li a:hover {
+.top-nav .menu li a:hover {
     color: #EB6825;
 }
 
-.menu li a i {
+.top-nav .menu li a i {
     height: 25px;
     width: 25px;
     border-radius: 100%;
     padding: 6px;
     margin-right: 15px;
-    background-color: #27AE60;
+    background-color: #222;
     color: #fff;
 }
 
@@ -232,11 +232,11 @@ a.nav-link.login-icon {
 
 
 @media (min-width: 576px) {
-    .modal-dialog {
+    .login-registration-modal .modal-dialog {
         max-width: 400px;
     }
 
-    .modal-dialog .modal-content {
+    .login-registration-modal .modal-dialog .modal-content {
         padding: 1rem;
     }
 }
@@ -1183,7 +1183,7 @@ a:hover, a:active {
     background-repeat: no-repeat;
     padding: 100px;
 }
-.vagtatable-shop-banner h1{
+.shop-title{
     font-size: 72px;
     line-height: 85px;
     font-weight: 600;
@@ -1191,6 +1191,13 @@ a:hover, a:active {
     margin: 0px auto 25px;
     color: orange;
 }
+.fruits-shop-banner{
+    background-image: url(/asset/image/foodimg/fruits/fruitsbannner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+}
+
 /*footer-wrapper*/
 .footer-wrapper {
     background-color: #222;
