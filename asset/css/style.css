@@ -730,21 +730,24 @@ span.offer-percent-bg {
 }
 
 /*====restaurent-list page======*/
-.sort-by {
+.restaurent-page-wrapper{
+    padding: 70px 0px;
+}
+.restaurent-page-wrapper .sort-by {
     margin-left: 10px;
 }
 
-.nav-right {
+.restaurent-page-wrapper .nav-right {
     text-align: right;
 }
 
-.tab-image {
+.restaurent-page-wrapper .tab-image {
     float: left;
     text-align: center;
     margin-right: 20px;
 }
 
-.tab-image img {
+.restaurent-page-wrapper .tab-image img {
     background-position: center;
     border: 1px solid #ddd;
     padding: 5px;
@@ -806,7 +809,7 @@ a.view-btn {
     border-radius: 25px;
 }
 
-.breadcrumb {
+.restaurent-page-wrapper .breadcrumb {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -819,36 +822,36 @@ a.view-btn {
     border-radius: 0.25rem;
 }
 
-li.breadcrumb-item a {
+.restaurent-page-wrapper li.breadcrumb-item a {
     color: #27AE60;
     text-decoration: none;
 }
 
-h3.filter-title {
+.restaurent-page-wrapper h3.filter-title {
     font-size: 15px;
     text-transform: capitalize;
     margin-bottom: 10px;
 }
 
-.search-input {
+.restaurent-page-wrapper .search-input {
     border-radius: 30px;
     width: 100%;
     position: relative;
 }
 
-.input-group-append {
+.restaurent-page-wrapper .input-group-append {
     position: absolute;
     right: 20px;
     margin-top: 12px;
 }
 
-.input-group>.form-control:not(:last-child),
-.input-group>.custom-select:not(:last-child) {
+.restaurent-page-wrapper .input-group>.form-control:not(:last-child),
+.restaurent-page-wrapper .input-group>.custom-select:not(:last-child) {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
-.sort-by-search label {
+.restaurent-page-wrapper .sort-by-search label {
     display: block;
     margin-bottom: .5rem;
 }

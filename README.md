@@ -10,3 +10,10 @@ Foodly– is a modern, unique as well as a responsive template. This eye-catchin
 <li>Cross Browser Optimization.</li>
 <li>Google font.</li>
 and much more.
+
+
+N.B:Image,icon collect From pexels,freepik,flaticon,google.
+
+
+“Website without visitors is like a ship lost in the horizon.”
+― Dr. Christopher Dayagdag
