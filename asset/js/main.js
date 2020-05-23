@@ -61,7 +61,9 @@
         }
     });
 
-
+    $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
 
 
     $('[data-toggle="tooltip"]').tooltip()

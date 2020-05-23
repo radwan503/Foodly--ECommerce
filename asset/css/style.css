@@ -234,30 +234,38 @@ a.nav-link.login-icon {
 @media (min-width: 576px) {
     .modal-dialog {
         max-width: 400px;
-   }
+    }
+
     .modal-dialog .modal-content {
         padding: 1rem;
-   }
+    }
 }
+
 .foodly-login-form .modal-header .close {
     margin-top: -1.5rem;
 }
+
 .foodly-login-form .form-title {
     margin: -2rem 0rem 2rem;
 }
+
 .foodly-login-form .btn-round {
     border-radius: 3rem;
 }
+
 .foodly-login-form .delimiter {
     padding: 1rem;
 }
+
 .foodly-login-form .social-buttons .btn {
     margin: 0 0.5rem 1rem;
 }
+
 .foodly-login-form .signup-section {
     padding: 0.3rem 0rem;
 }
-.foodly-login-form .btn-green-bg{
+
+.foodly-login-form .btn-green-bg {
     background-color: #27AE60;
     color: #fff;
     padding: 10px;
@@ -400,6 +408,7 @@ section.work-process-section {
     padding: 70px 0px;
     background-color: #f5fcf9;
 }
+
 ._how-it-works {
     box-shadow: 0px 0px 1px 1px #f2f2f2;
     padding: 20px;
@@ -445,13 +454,15 @@ section.work-process-section {
 
 
 /*favourite food css*/
-.popular-food-section{
+.popular-food-section {
     background-color: #fff;
     padding: 70px 0px;
 }
+
 ._favourite-food-item a {
     text-decoration: none;
 }
+
 ._favourite-food-item {
     padding: 10px;
 }
@@ -559,12 +570,14 @@ section.work-process-section {
     font-size: 14px;
     color: #222;
 }
+
 .shop-time {
     font-size: 12px;
     font-weight: 400 !important;
     border-radius: 15px;
     color: #fff !important;
 }
+
 .add-tocart-btn {
     border: 1px dotted #EE6825;
     padding: 7px 20px;
@@ -615,26 +628,31 @@ section.work-process-section {
     font-weight: 600;
     text-align: right;
 }
+
 /* offer */
 
-.special-offer{
+.special-offer {
     padding: 70px 0px;
     background-color: #f5fcf9;
 }
-.offer-title{
+
+.offer-title {
     font-size: 72px;
     line-height: 85px;
     font-weight: 600;
     letter-spacing: 0px;
     margin: 0px auto 25px;
 }
-.special-offer-inner a{
+
+.special-offer-inner a {
     list-style: none;
     text-decoration: none;
 }
+
 span.offer-percent-bg {
     color: coral;
 }
+
 .special-offer-inner ._btn {
     font-size: 14px;
     padding: 15px 16px;
@@ -648,12 +666,14 @@ span.offer-percent-bg {
     padding-left: 40px;
     padding-right: 40px;
 }
+
 .offer-img.aboutp3-img {
     height: 300px;
     width: 300px;
     margin: 0 auto;
 }
-.offer-img.aboutp3-img img{
+
+.offer-img.aboutp3-img img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -704,7 +724,7 @@ span.offer-percent-bg {
 
 /*restaurent page css*/
 /* popular  */
-.popular-restaurent-section{
+.popular-restaurent-section {
     padding: 70px 0px;
     background-color: #fff;
 }
@@ -713,6 +733,7 @@ span.offer-percent-bg {
 .sort-by {
     margin-left: 10px;
 }
+
 .nav-right {
     text-align: right;
 }
@@ -836,22 +857,175 @@ span.spacing-label {
     padding-left: 10px;
     color: #222;
 }
-.most-popular-restaurent-list.nav-right .nav-tabs .nav-link{
+
+.most-popular-restaurent-list.nav-right .nav-tabs .nav-link {
     color: #F07F31;
 }
+
 /*food-details css*/
 
-.food-banner {
-  
+.reservation-banner {
+    background-image: url(/asset/image/slider/reservation-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+
+}
+.banner-subtitle{
+    color: #27AE60;
+}
+.reservation-banner h1 {
+    font-size: 72px;
+    line-height: 85px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    margin: 0px auto 25px;
+    color: orange;
+}
+
+.reservation-innrer.card {
+    margin: auto;
+    border: solid 1px #dbdad7;
+    width: 65%;
+    padding-left: 10px !important;
+    padding-bottom: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 0px !important
+}
+
+section.food-reservation-section {
+    padding: 70px 0px;
+}
+
+.reserve-title {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    margin: 0px auto 16px;
+    color: orange;
+}
+
+@media only screen and (max-width: 600px) {
+    .reservation-innrer.card {
+        margin: auto;
+        border: solid 1px #dbdad7;
+        width: 100%;
+        padding-left: 10px !important;
+        padding-bottom: 10px !important;
+        padding-right: 10px !important;
+        padding-top: 0px !important
+    }
+
 }
 
 .single-brand-item {
     filter: grayscale(1);
 }
+
 .single-brand-item:hover {
     filter: grayscale(0);
 }
+/* about */
+.aboutus-section {
+    padding: 90px 0;
+}
+.aboutus-title {
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 0 0 11px;
+    position: relative;
+    text-transform: uppercase;
+    color: #000;
+}
+.aboutus-title::after {
+    background: #fdb801 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 54px;
+}
+.aboutus-text {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 0 35px;
+}
 
+a:hover, a:active {
+    color: #ffb901;
+    text-decoration: none;
+    outline: 0;
+}
+.aboutus-more {
+    border: 1px solid #fdb801;
+    border-radius: 25px;
+    color: #fdb801;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+.feature .feature-box .iconset {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    position: relative;
+    width: 18%;
+}
+.feature .feature-box .iconset::after {
+    background: #fdb801 none repeat scroll 0 0;
+    content: "";
+    height: 150%;
+    left: 43%;
+    position: absolute;
+    top: 100%;
+    width: 1px;
+}
+
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+
+
+.feature .feature-box .feature-content {
+    float: left;
+    padding-left: 28px;
+    width: 78%;
+}
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+.feature .feature-box .feature-content p {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+}
+.aboutus-section .icon {
+    color : #f4b841;
+    padding:0px;
+    font-size:40px;
+    border: 1px solid #fdb801;
+    border-radius: 100px;
+    color: #fdb801;
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+}
 /*footer-wrapper*/
 .footer-wrapper {
     background-color: #222;
@@ -882,109 +1056,4 @@ h4.footer-title {
     width: 35px;
     padding: 9px;
     border-radius: 5px;
-}
-
-
-.card {
-    margin: auto;
-    border: solid 1px #dbdad7;
-    width: 60%;
-    padding-left: 10px !important;
-    padding-bottom: 10px !important;
-    padding-right: 10px !important;
-    padding-top: 0px !important
-}
-
-.card-title {
-    margin: auto;
-    padding: 15px;
-    background-color: #2f7fad;
-    color: white;
-    width: 80%
-}
-
-div.card-body {
-    padding: 0px
-}
-
-.custom-select {
-    width: 100%
-}
-
-.btn2 {
-    margin-left: 10%
-}
-
-input {
-    outline: 0 !important;
-    border-width: 0 0 2px !important;
-    border-color: #d1d1cf !important
-}
-
-input:focus {
-    border-color: #d1d1cf !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important
-}
-
-select {
-    outline: 0 !important;
-    border-width: 0 0 2px !important;
-    border-color: #d1d1cf !important
-}
-
-select:focus {
-    border-color: #d1d1cf !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important
-}
-
-.radiobtn {
-    margin-left: 3.5%
-}
-
-.icons {
-    margin: auto !important
-}
-
-.fa {
-    border-radius: 25px;
-    width: 10%;
-    margin-left: 5%;
-    border: solid 2px #dbdad7;
-    margin-top: 5%;
-    text-align: center
-}
-
-.fa-plane {
-    color: #1cad9f
-}
-
-.fa-taxi {
-    color: #c2f700
-}
-
-.fa-train {
-    color: red
-}
-
-@media only screen and (max-width: 600px) {
-    .card {
-        margin: auto;
-        border: solid 1px #dbdad7;
-        width: 90%;
-        padding-left: 10px !important;
-        padding-bottom: 10px !important;
-        padding-right: 10px !important;
-        padding-top: 0px !important
-    }
-
-    .fa {
-        border-radius: 25px;
-        width: 15%;
-        margin-left: 5%;
-        border: solid 2px #dbdad7;
-        margin-top: 5%;
-        text-align: center
-    }
 }

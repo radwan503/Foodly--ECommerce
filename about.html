@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="asset/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="asset/css/default.css">
     <link rel="stylesheet" type="text/css" href="asset/css/style.css">
     <link rel="stylesheet" type="text/css" href="asset/css/responsive.css">
@@ -151,7 +152,7 @@
                             </a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Menu
+                            <a class="nav-link" href="#">Restaurent
 
                             </a>
                         </li>
@@ -196,129 +197,74 @@
             </div>
         </div>
         <!--   food details-->
-        <section class="food-banner">
+        <div class="reservation-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <div class="card shadow mb-5 bg-white rounded">
-                            <!--Card-Body-->
-                            <div class="card-body">
-                                <!--Card-Title-->
-                                <p class="card-title text-center shadow mb-5 rounded">Travel Booking Form</p>
-                                <div class="icons text-center">
-                                    <i class="fa fa-plane fa-2x" aria-hidden="true"></i>
-                                    <i class="fa fa-taxi fa-2x" aria-hidden="true"></i>
-                                    <i class="fa fa-train fa-2x" aria-hidden="true"></i> </div>
-                                <hr>
-                                <p class="searchText"><strong>Search For Cheap Flights</strong></p>
-                                <!--First Row-->
-                                <div class="row mb-3 mt-3"> <label class="radiobtn"><input type="radio" name="gender"
-                                            value="male">One Way</label> <label class="radiobtn"><input type="radio"
-                                            name="gender" value="male">Round Trip</label> </div>
-                                <!--Second Row-->
-                                <div class="row">
-                                    <div class="col-sm-6"> <select class="browser-default custom-select mb-4"
-                                            id="select">
-                                            <option value="" disabled="" selected="">From City/Airport</option>
-                                            <option value="1">New Delhi</option>
-                                            <option value="2">Mumbai</option>
-                                            <option value="3">Bangalore</option>
-                                        </select> </div>
-                                    <div class="col-sm-6"> <select class="browser-default custom-select mb-4"
-                                            id="select">
-                                            <option value="" disabled="" selected="">To City/Airport</option>
-                                            <option value="1">New Delhi</option>
-                                            <option value="2">Mumbai</option>
-                                            <option value="3">Bangalore</option>
-                                        </select> </div>
-                                </div>
-                                <!--Third Row-->
-                                <div class="row">
-                                    <div class="col-sm-6"> <input placeholder="&#xf073; Departing" type="text"
-                                            id="date-picker-example" class="form-control datepicker mb-4"
-                                            style="font-family:Arial, FontAwesome"> </div>
-                                    <div class="col-sm-6"> <input placeholder="&#xf073; Arriving" type="text"
-                                            id="date-picker-example" class="form-control datepicker"
-                                            style="font-family:Arial, FontAwesome"> </div>
-                                </div>
-                                <!--Fourth Row-->
-                                <div class="row mt-4">
-                                    <div class="col-sm-6"> <select class="browser-default custom-select mb-4"
-                                            id="select">
-                                            <option value="" disabled="" selected="">Anytime</option>
-                                            <option value="1">6:00 AM</option>
-                                            <option value="2">3:00 PM</option>
-                                            <option value="3">6:00 PM</option>
-                                        </select> </div>
-                                    <div class="col-sm-6"> <select class="browser-default custom-select mb-4"
-                                            id="select">
-                                            <option value="" disabled="" selected="">Anytime</option>
-                                            <option value="1">6:00 AM</option>
-                                            <option value="2">3:00 PM</option>
-                                            <option value="3">6:00 PM</option>
-                                        </select> </div>
-                                </div>
-                                <!--Fifth Row-->
-                                <div class="row">
-                                    <div class="col-sm-4"> <select class="browser-default custom-select mb-4"
-                                            id="select">
-                                            <option value="" disabled="" selected="">Kids(0-14)</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select> </div>
-                                    <div class="col-sm-4"> <select class="browser-default custom-select mb-4"
-                                            id="select">
-                                            <option value="" disabled="" selected="">Adults(15-64)</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select> </div>
-                                    <div class="col-sm-4"> <select class="browser-default custom-select mb-4"
-                                            id="select">
-                                            <option value="" disabled="" selected="">Seniors(65+)</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select> </div>
-                                </div> <a href="#" class="btn btn-primary float-right mt-5">Find Flights</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="open-close-restaurent">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="pull-left">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="#">Restaurent List</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Dhanmondi</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="pull-right">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item text-success active" aria-current="page"> Now Open</li>
-                                    <li class="breadcrumb-item"><a href="#">opening hours 11.00 am</a></li>
-                                    <li class="breadcrumb-item"><a href="#">-10:00pm</a></li>
-
-                                </ol>
-                            </nav>
-                        </div>
+                    <div class="col-md-6 offset-md-2">
+                        <h6 class="banner-subtitle">DISCOVER YOUR TASTE</h6>
+                        <h1>Enjoy Our Delicious Meal</h1>
                     </div>
                 </div>
             </div>
         </div>
 
 
+        <div class="aboutus-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="aboutus">
+                                <h2 class="aboutus-title">About Us</h2>
+                                <p class="aboutus-text">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+                                <p class="aboutus-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
+                                <a class="aboutus-more" href="#">read more</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="aboutus-banner">
+                                <img src="asset/image/foodimg/chef.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-6 col-xs-12">
+                            <div class="feature">
+                                <div class="feature-box">
+                                    <div class="clearfix">
+                                        <div class="iconset">
+                                            <span class="fa fa-cog icon"></span>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Work with heart</h4>
+                                            <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feature-box">
+                                    <div class="clearfix">
+                                        <div class="iconset">
+                                            <span class="fa fa-cog icon"></span>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Reliable services</h4>
+                                            <p>Donec vitae sapien ut libero venenatis faucibu. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feature-box">
+                                    <div class="clearfix">
+                                        <div class="iconset">
+                                            <span class="fa fa-cog icon"></span>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Great support</h4>
+                                            <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         <footer class="footer-wrapper">
             <div class="container">
@@ -384,6 +330,7 @@
         </footer>
         <script src="asset/js/jquery-3.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="asset/js/bootstrap.min.js"></script>
         <script src="asset/js/owl.carousel.min.js"></script>
         <script src="asset/js/main.js"></script>
