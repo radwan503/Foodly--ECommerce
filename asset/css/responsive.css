@@ -1,96 +1,117 @@
 @media (min-width: 240px) and (max-width: 319px) {
     .main-text {
-    position: inherit;
-    padding: 0px;
-    width: 100%;
-    color: #FFF;
-    font-size: 14px;
-}
-.info-group {
-    background-color: #27AE60;
-    padding: 30px;
-    opacity: .9;
-    border-radius: 0;
-}
+        position: inherit;
+        padding: 0px;
+        width: 100%;
+        color: #FFF;
+        font-size: 14px;
+    }
+
+    .info-group {
+        background-color: #27AE60;
+        padding: 30px;
+        opacity: .9;
+        border-radius: 0;
+    }
+
+    .shop-title {
+        font-size: 28px;
+        line-height: 30px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
     .main-text {
-    position: inherit;
-    padding: 0px;
-    width: 100%;
-    color: #FFF;
-    font-size: 14px;
-}
-.info-group {
-    background-color: #27AE60;
-    padding: 30px;
-    opacity: .9;
-    border-radius: 0;
-}
+        position: inherit;
+        padding: 0px;
+        width: 100%;
+        color: #FFF;
+        font-size: 14px;
+    }
+
+    .info-group {
+        background-color: #27AE60;
+        padding: 30px;
+        opacity: .9;
+        border-radius: 0;
+    }
+    .shop-title {
+        font-size: 28px;
+        line-height: 30px;
+    }
 }
 
 @media (min-width: 375px) and (max-width: 479px) {
     .main-text {
-    position: inherit;
-    padding: 0px;
-    width: 100%;
-    color: #FFF;
-    font-size: 14px;
-}
-.info-group {
-    background-color: #27AE60;
-    padding: 30px;
-    opacity: .9;
-    border-radius: 0;
-}
+        position: inherit;
+        padding: 0px;
+        width: 100%;
+        color: #FFF;
+        font-size: 14px;
+    }
+
+    .info-group {
+        background-color: #27AE60;
+        padding: 30px;
+        opacity: .9;
+        border-radius: 0;
+    }
+    .shop-title {
+        font-size: 28px;
+        line-height: 30px;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 639px) {
     .main-text {
-    position: inherit;
-    padding: 0px;
-    width: 100%;
-    color: #FFF;
-    font-size: 14px;
-}
-.info-group {
-    background-color: #27AE60;
-    padding: 30px;
-    opacity: .9;
-    border-radius: 0;
-}
+        position: inherit;
+        padding: 0px;
+        width: 100%;
+        color: #FFF;
+        font-size: 14px;
+    }
+
+    .info-group {
+        background-color: #27AE60;
+        padding: 30px;
+        opacity: .9;
+        border-radius: 0;
+    }
+    .shop-title {
+        font-size: 28px;
+        line-height: 30px;
+    }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
     .main-text {
-    position:inherit;
-    padding: 0px;
-    width: 100%;
-    color: #FFF;
-    font-size: 14px;
+        position: inherit;
+        padding: 0px;
+        width: 100%;
+        color: #FFF;
+        font-size: 14px;
+    }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-text {
+        position: inherit;
+        padding: 0px;
+        width: 100%;
+        color: #FFF;
+        font-size: 14px;
+    }
 }
-@media (min-width: 768px) and (max-width: 1023px){
-      .main-text {
-    position:inherit;
-    padding: 0px;
-    width: 100%;
-    color: #FFF;
-    font-size: 14px;
+
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .main-text {
+        position: inherit;
+        padding: 0px;
+        width: 100%;
+        color: #FFF;
+        font-size: 14px;
+    }
 }
-}
-    
-    
-@media (min-width: 1024px) and (max-width: 1280px){
-          .main-text {
-    position:inherit;
-    padding: 0px;
-    width: 100%;
-    color: #FFF;
-    font-size: 14px;
-}
-}
-@media (min-width: 1680px) and (max-width: 1920px){
-    
-}
+
+@media (min-width: 1680px) and (max-width: 1920px) {}
