@@ -18,6 +18,10 @@
         font-size: 28px;
         line-height: 30px;
     }
+    .reservation-banner h1 {
+        font-size: 35px;
+        line-height: 30px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -37,6 +41,10 @@
     }
     .shop-title {
         font-size: 28px;
+        line-height: 30px;
+    }
+    .reservation-banner h1 {
+        font-size: 35px;
         line-height: 30px;
     }
 }
@@ -60,6 +68,10 @@
         font-size: 28px;
         line-height: 30px;
     }
+    .reservation-banner h1 {
+        font-size: 35px;
+        line-height: 30px;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 639px) {
@@ -79,6 +91,10 @@
     }
     .shop-title {
         font-size: 28px;
+        line-height: 30px;
+    }
+    .reservation-banner h1 {
+        font-size: 35px;
         line-height: 30px;
     }
 }
