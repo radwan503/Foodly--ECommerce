@@ -6,6 +6,12 @@
     color: #FFF;
     font-size: 14px;
 }
+.info-group {
+    background-color: #27AE60;
+    padding: 30px;
+    opacity: .9;
+    border-radius: 0;
+}
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -15,6 +21,12 @@
     width: 100%;
     color: #FFF;
     font-size: 14px;
+}
+.info-group {
+    background-color: #27AE60;
+    padding: 30px;
+    opacity: .9;
+    border-radius: 0;
 }
 }
 
@@ -26,6 +38,12 @@
     color: #FFF;
     font-size: 14px;
 }
+.info-group {
+    background-color: #27AE60;
+    padding: 30px;
+    opacity: .9;
+    border-radius: 0;
+}
 }
 
 @media (min-width: 480px) and (max-width: 639px) {
@@ -35,6 +53,12 @@
     width: 100%;
     color: #FFF;
     font-size: 14px;
+}
+.info-group {
+    background-color: #27AE60;
+    padding: 30px;
+    opacity: .9;
+    border-radius: 0;
 }
 }
 
